@@ -390,26 +390,6 @@ a {
 /* ============================================= */
 /*              Buttons                          */
 /* ============================================= */
-.btn {
-  margin-top: 15px;
-  width: 100%;
-  color: #fff;
-  border: none;
-  padding: 10px 0;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-@media (min-width: 768px) {
-  .btn {
-    padding: 10px 30px;
-  }
-}
-@media (min-width: 768px) {
-  .btn + .btn {
-    margin-left: 10px;
-  }
-}
-
 .default {
   background-color: #51ddfc;
 }
@@ -448,6 +428,27 @@ a {
 .warning:hover {
   background-color: #feb4a2;
   transition: 0.2s ease-in;
+}
+
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+@media (min-width: 768px) {
+  .btn {
+    padding: 10px 30px;
+  }
+}
+@media (min-width: 768px) {
+  .btn + .btn {
+    margin-left: 10px;
+  }
 }
 
 /* ============================================= */
@@ -526,10 +527,6 @@ a {
   [class^=col] + [class^=col] {
     margin-left: 10px;
   }
-}
-
-.card {
-  flex-basis: 100%;
 }
 
 @media (min-width: 768px) {
@@ -647,31 +644,23 @@ a {
 /* ============================================= */
 /*              Images                           */
 /* ============================================= */
-.img-avatar {
+.img-logo, .img-frame, .img-avatar {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.img-avatar {
   margin-top: 10px;
   max-width: 100%;
   max-height: 100%;
 }
-
 .img-frame {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 10px;
   max-width: 100%;
   padding: 13px;
   border: 1px solid #ccc;
 }
-
-.img-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* ============================================= */
 /*              Navigation                       */
 /* ============================================= */

@@ -25,7 +25,6 @@
         @include mq (medium) {
             flex-basis: 100px;
         }
-
         &:hover {
             color: $white;
             background-color: $color-secondary;

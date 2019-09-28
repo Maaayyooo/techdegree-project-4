@@ -9,7 +9,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    }
+  }
 }
 
 .row {
@@ -29,7 +29,6 @@
   }
 }
 
-
 [class^=col] {
   margin-top: 10px;
   flex-basis: 100%;
@@ -45,12 +44,6 @@
       margin-left: 10px;
     }
   }
-}
-
-
-
-.card {
-  flex-basis: 100%;
 }
 
 .col-1 {

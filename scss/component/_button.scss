@@ -2,11 +2,31 @@
 /*              Buttons                          */
 /* ============================================= */
 
+$buttons: 
+  'default' $color-secondary,
+  'error' $color-error,
+  'info' $color-info,
+  'success' $color-success,
+  'warning' $color-warning;
+
+// loop in a map with @each
+@each $name, $color in $buttons {
+  .#{$name} {
+    background-color: $color;
+
+    &:hover {
+      background-color: lighten($color, 15%);
+      transition: 0.2s ease-in;
+    }
+  }
+}
+
 .btn {
     margin-top: 15px;
     width: 100%;
     color: $white;
     border: none;
+    cursor: pointer;
     padding: 10px 0;
     text-transform: uppercase;
     border-radius: 5px;
@@ -19,45 +39,5 @@
         margin-left: 10px;
       }
     }
-  }
-
-
-.default {
-  background-color: $color-secondary;
-  &:hover {
-    background-color: lighten($color-secondary, 15%);
-    transition: .2s ease-in;
-  }
 }
 
-.error {
-  background-color: $color-error;
-  &:hover {
-    background-color: lighten($color-error, 15%);
-    transition: .2s ease-in;
-  }
-}
-
-.info {
-  background-color: $color-info;
-  &:hover {
-    background-color: lighten($color-info, 15%);
-    transition: .2s ease-in;
-  }
-}
-
-.success {
-  background-color: $color-success;
-  &:hover {
-    background-color: lighten($color-success, 15%);
-    transition: .2s ease-in;
-  }
-}
-
-.warning {
-  background-color: $color-warning;
-  &:hover {
-    background-color: lighten($color-warning, 15%);
-    transition: .2s ease-in;
-  }
-}
